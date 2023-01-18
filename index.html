@@ -1,0 +1,91 @@
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+Content-Length: 100000
+
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <style>
+          .app{
+              margin-top: 50px;
+              margin-left: 20px;
+              margin-right: 20px;
+              width: 1300px;
+              height: 900px;
+              display: flex;
+              background-color: aquamarine;
+              justify-content: space-around;
+              align-items: center;
+          }
+          h1,h5{
+              padding-left: 200px;
+          }
+          .submit{
+              margin-left: 250px;
+              width: 80px;
+              height: 50px;
+              border-style: none;
+              color: blueviolet;
+              background-color: thistle;
+          }
+  
+          #btn{
+              height: 40px;
+              width: 100px;
+              border-style: none;
+              color: blueviolet;
+              background-color: thistle;
+              
+          }
+      </style>
+  </head>
+  <body>
+      
+          <form id="form1" method="post" action="#">
+     <div class="app"> <div> <h1>accelerometer</h1><h5>STMicroelectronic LIS3DHTR 3-Axis-Accelerometer </h5>   <div id="accelerometer">  <label for="enable">enable : </label> <input type="radio" id="enable1" name="enable1" value="true"> <label for="true">True   </label> <input type="radio" id="enable1" name="enable1" value="false"> <label for="false">False   </label> <br> <small> Enable or disable accelerometer  </small><br><br> <label for="no_of_samples">no_of_samples : </label> <input type="number" id="no_of_samples2" name="no_of_samples2" min="1" max="100"> <br> <small> Number of RMS values per measurement  </small><br><br> <label for="window_length">window_length : </label> <input type="number" id="window_length3" name="window_length3" min="1" max="10000"> <br> <small> Length of window for RMS computation  </small><br><br> <label for="sample_rate">sample_rate : </label> <input type="number" id="sample_rate4" name="sample_rate4" min="0" max="1000000"> <br> <small> Sample rate of accelerometer  </small><br><br> <label for="full_scale_g">full_scale_g : </label> <input type="text" name="full_scale_g5" id="full_scale_g5"> <br> <small> Full scale of g values  </small><br><br> <label for="shock_detect">shock_detect : </label> <input type="text" name="shock_detect6" id="shock_detect6"> <br> <br>  <label for="enable">enable : </label> <input type="radio" id="enable7" name="enable7" value="true"> <label for="true">True   </label> <input type="radio" id="enable7" name="enable7" value="false"> <label for="false">False   </label> <br> <small> Enable or disable  </small><br><br> <label for="threshold">threshold : </label> <input type="number" id="threshold8" name="threshold8" min="0" max="1000000"> <br> <small> Value of the threshold  </small><br><br> <label for="duration">duration : </label> <input type="number" id="duration9" name="duration9" min="0" max="1000000"> <br> <small> Value of duration   </small><br><br> <label for="movement_detect">movement_detect : </label> <input type="text" name="movement_detect10" id="movement_detect10"> <br> <br>  <label for="enable">enable : </label> <input type="radio" id="enable11" name="enable11" value="true"> <label for="true">True   </label> <input type="radio" id="enable11" name="enable11" value="false"> <label for="false">False   </label> <br> <small> Enable or disable  </small><br><br> <label for="threshold">threshold : </label> <input type="number" id="threshold12" name="threshold12" min="0" max="1000000"> <br> <small> to keep the threshold  </small><br><br> <label for="duration">duration : </label> <input type="number" id="duration13" name="duration13" min="0" max="1000000"> <br> <small> Time to  enable   </small><br><br></div> </div> </div> <div class="app"> <div> <h1>sensor</h1><h5>PT100 temperature sensor and air quality sensor</h5>   <div id="sensor">  <label for="pt100_enable">pt100_enable : </label> <input type="radio" id="pt100_enable14" name="pt100_enable14" value="true"> <label for="true">True   </label> <input type="radio" id="pt100_enable14" name="pt100_enable14" value="false"> <label for="false">False   </label> <br> <small> Enable or disable PT100 measurement  </small><br><br> <label for="air_quality_enable">air_quality_enable : </label> <input type="radio" id="air_quality_enable15" name="air_quality_enable15" value="true"> <label for="true">True   </label> <input type="radio" id="air_quality_enable15" name="air_quality_enable15" value="false"> <label for="false">False   </label> <br> <small> Enable or disable air quality measurement  </small><br><br> <label for="period_ms">period_ms : </label> <input type="number" id="period_ms16" name="period_ms16" min="100" max="10000"> <br> <small> Period in ms fpr measurement  </small><br><br></div> </div> </div> <div class="app"> <div> <h1>network</h1><h5>Network settings</h5>   <div id="network">  <label for="dhcp">dhcp : </label> <input type="radio" id="dhcp17" name="dhcp17" value="true"> <label for="true">True   </label> <input type="radio" id="dhcp17" name="dhcp17" value="false"> <label for="false">False   </label> <br> <small> Enable automatic IP address  </small><br><br> <label for="ipaddress">ipaddress : </label> <input type="text" name="ipaddress18" id="ipaddress18"> <br> <small> Static IP address (ignored if DHCP is enabled)  </small><br><br> <label for="subnetmask">subnetmask : </label> <input type="text" name="subnetmask19" id="subnetmask19"> <br> <small> Static subnet mask (ignored if DHCP is enabled)  </small><br><br> <label for="gateway">gateway : </label> <input type="text" name="gateway20" id="gateway20"> <br> <small> Address of gateway (ignored if DHCP is enabled)  </small><br><br> <label for="dns">dns : </label> <input type="text" name="dns21" id="dns21"> <br> <small> Adress of DNS server (ignored if DHCP is enabled)  </small><br><br></div> </div> </div> <div class="app"> <div> <h1>remote_update</h1><br>  <div id="remote_update">  <label for="host">host : </label> <input type="text" name="host22" id="host22"> <br> <small> Host for the Endpoint  </small><br><br></div> </div>  </div> <div class="app"> <div> <h1>udpstreamer</h1><br>  <div id="udpstreamer">  <label for="enable">enable : </label> <input type="radio" id="enable23" name="enable23" value="true"> <label for="true">True   </label> <input type="radio" id="enable23" name="enable23" value="false"> <label for="false">False   </label> <br> <small> Enable or disable  </small><br><br> <label for="port">port : </label> <input type="number" id="port24" name="port24" min="0" max="1000000"> <br> <small> Number to fix the port  </small><br><br> <label for="ipaddress">ipaddress : </label> <input type="text" name="ipaddress25" id="ipaddress25"> <br> <small> Static IP address (ignored if DHCP is enabled)  </small><br><br></div> </div>  </div>
+    <center>
+    <input id="btn" type="submit" value="send">
+    </center>
+    
+    </form>
+
+    <form id="sendForm" action="#" method="post" style="display: none;">
+        <label for="main-input">Input message:</label>
+        <input type="text" id="main-input" name="msg">
+        <input type="submit" id="btn" value="Send">
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+          
+
+                        //const udpstreamer = document.querySelector('#udpstreamer')
+                        //const btnudpstreamer = document.querySelector('#btnudpstreamer')
+                        const btn = document.querySelector('#btn')
+                        //const udpstreamerSubmit = document.querySelector('#udpstreamerSubmit')
+                       /* udpstreamerSubmit.addEventListener('click',udpstreamerFunc);
+                        function udpstreamerFunc(e){
+                            //e.preventDefault();
+                            let formData = new FormData(udpstreamer);
+                             const enable23 = formData.get('enable23'); const port24 = formData.get('port24'); const ipaddress25 = formData.get('ipaddress25');
+                            let url = "http://127.0.0.1:5500/"
+                            $.post(url,'udpstreamer' + ' ' + enable23 + ' ' + port24 + ' ' + ipaddress25, (data,status) => {
+                                console.log(data)
+                            })
+                                */
+                            //console.log('udpstreamer' + ' ' + enable23 + ' ' + port24 + ' ' + ipaddress25)
+                            //document.querySelector('#main-inputudpstreamer').value = 'udpstreamer' + ' ' + enable23 + ' ' + port24 + ' ' + ipaddress25
+
+                            //const sendForm = document.querySelector('#sendForm')
+                            //const formData2 = new FormData(sendForm);
+                            //btnudpstreamer.submit();
+                            btn.submit();
+                           
+                        
+                    
+    </script>
+  </body>
+</html>
+
